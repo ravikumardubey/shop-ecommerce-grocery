@@ -1,0 +1,134 @@
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #adadad;
+}
+ .dropdown-btn.tr {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 3px 0px 3px 0px;
+    padding-left: 23px;
+    border-bottom: 1px solid #d8d8d833;
+}
+.dropdown-btn.tr .fa-caret-down{ color:#333;}
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.sidenav .active {
+  background-color: green;
+  color: #fff;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #f7f7f7;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+.menu{margin-top:30px;}
+
+/* CONTAINERS */
+
+
+.four { width: 32.26%; max-width: 32.26%;}
+
+
+
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
+}
+
+.form label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 12px;
+	text-align: center;
+	height: 35px;
+	line-height: 31px;
+	display: block;
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100px;
+}
+
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	border: 3px solid #fbfbfb;
+	background-color: #2fcc71;
+}
+
+.form .plan input:checked + label:after, form .payment-plan input:checked + label:after, .form .payment-type input:checked + label:after{
+	content: "\2713";
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	background-color: #2fcc71;
+	z-index: 999;
+	position: absolute;
+	top: -9px;
+	right: -10px;
+}
+
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0;
+	background-color: #2fcc71;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.submit:hover{
+	cursor: pointer;
+	transform: rotateX(360deg);
+}
+
